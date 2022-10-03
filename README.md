@@ -2,9 +2,9 @@
 ## fall-22-mp1-work
 
 
-### Last Name:  
-### First Name: 
-### GitHub Username: 
+### Last Name: McSween  
+### First Name: Harry
+### GitHub Username: HarryMperiod5
 
 ---
 #### General Workflow: 
