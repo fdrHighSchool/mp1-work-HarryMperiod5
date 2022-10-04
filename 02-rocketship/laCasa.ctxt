@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=laCasa
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ floor()
+comment3.params=
+comment3.target=void\ wall()
+comment4.params=uniqueWord1\ uniqueWord2
+comment4.target=void\ uniqueWall(java.lang.String,\ java.lang.String)
+comment5.params=
+comment5.target=void\ triangularTop()
+numComments=6
