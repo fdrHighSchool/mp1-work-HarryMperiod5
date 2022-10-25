@@ -14,6 +14,7 @@ public class EmailGenerator {
     String occuptain = s.nextLine();
     System.out.print( "Enter your favorite number: ");
     String favoriteNum = s.nextLine();
+    System.out.println(generatePassword());
 
 
     if(occuptain.equalsIgnoreCase("student")) {
@@ -33,8 +34,6 @@ public class EmailGenerator {
     s.close();
   } // end main method
 
-
-
   /*
    * Name: initialize
    * Purpose: send back the first character (inital) of a name
@@ -44,5 +43,35 @@ public class EmailGenerator {
   public static String initialize(String n) {
     return n.substring(0, 1);
   } // end initialize method
+
+  public static String generatePassword() {
+    String password = "";
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter your password length: ");
+
+
+    int length = s.nextInt();
+
+  
+    for(int i = 0; i < length; i++){
+      int rand = (int)(Math.random()*(90-64+1) + 64);
+      int lower = (int)(Math.random()*(122-97+1) + 97);
+      int numspec = (int)(Math.random()*(57-33+1) + 33);
+     
+
+          char randc = (char)rand;
+          char lowerc = (char)lower;
+          char numspecc = (char)numspec;
+          
+          password += randc;
+          password += lowerc;
+          password += numspecc;
+      }
+      password = password.substring(0,length);
+      s.close();
+      return password;
+
+      
+    }
 }
  // end class
